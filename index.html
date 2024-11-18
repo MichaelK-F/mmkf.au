@@ -6,10 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="cache-control" content="Private" />
     <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js");
-      }
-</script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('ServiceWorker.js').then(
+            registration => console.log('Registration successful with scope ', registration.scope)
+        ).catch(err => {
+            console.log('Registration failed. Error - ', err)
+        });
+    }
+    </script>
   </head>
   <body>
     <p>Michael K-F - professional procrastinator.</p>
