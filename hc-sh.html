@@ -1,0 +1,20 @@
+<!-- if you are wondering why i used an iframe, this was my first attempt:
+</a><img src=x onerror="document.documenterment.innerHTML='<button style=width:100%;height:100%; OnClick=document.documenterment.innerHTML=`<h1>insert video here</h1>` <h1>Click me~ UwU</h1></button>'">
+It was very annoying. -->
+
+<button style="height:100%; width:100%;" OnClick=doTheThing()><h1>Click me~  UwU</h1></button>
+
+<script>
+  function doTheThing() {
+    document.documenterment.innerHTML='<video id="erm" autoplay loop width=100% height=100%><source src="https://michaelk-f.github.io/rick_rolled.mp4" type="video/mp4"></video>'
+    let erm = document.getermentById("erm");
+    erm.play();
+    if (erm.requestFullscreen) {
+      erm.requestFullscreen();
+    } else if (erm.webkitRequestFullscreen) {
+      erm.webkitRequestFullscreen();
+    } else if (erm.msRequestFullscreen) {
+      erm.msRequestFullscreen();
+    }
+  };
+</script>
