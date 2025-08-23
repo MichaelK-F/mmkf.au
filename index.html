@@ -1,40 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
   <head>
-    <title>MMKF</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="description" content="MMKF's website.">
-    <meta name="keywords" content="MMKF, MichaelK-F">
-    <link rel="canonical" href="https://mmkf.au/">
-    <meta http-equiv="cache-control" content="Private" />
-    <script>
-      const registerServiceWorker = async () => {
-          if ("serviceWorker" in navigator) {
-              try {
-                  const registration = await navigator.serviceWorker.register("./sw.js")
-                  registration.addEventListener("updatefound", () => {
-                      console.log("New worker being installed => ", registration.installing)
-                  })
-                  if (registration.installing) {
-                      console.log("Service worker installed");
-                  } else if (registration.active) {
-                      console.log("Service worker active!");
-                  }
-              } catch (err) {
-                  console.error("Registration failed")
-              }
-          }
-      }
-      
-      registerServiceWorker()
-
-
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MMKF.AU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   </head>
   <body>
-    <p>Michael K-F - professional procrastinator.</p>
-    <br>
-    <a href="https://github.com/MichaelK-F/windows-wallpaper-changer/releases/latest/download/wallpaper-changer.exe">Windows wallpaper changer for company managed systems</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img alt="icon" width="28" height="28" src="./favicon.png"/>
+          <span>mmkf.au</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://portfolio.mmkf.au">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <h1 class="container mt-4">Hi there, I'm Michael K-F</h1>
+  <div class="container mt-4">
+    <h2>Who am I?</h2>
+    <p>I am a nerd who enjoys working on hardware and software projects. I have experence in PCB design, hardware hacking and lots of other fun things.</p>
+    <h2 class="mt-4">What have I done?</h2>
+    <p>I have been working on a few projects recently (check out my portfolio). My favourite thing to do at the moment is to find work arounds to settings or features that are normally disabled on school/company managed devices, such as my wallpaper changer that works even if the windows policy has it disabled.</p>
+    <h2 class="mt-4">Contact me</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <a class="btn btn-outline-light btn-sm" href="https://github.com/MichaelK-F" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-outline-light btn-sm" href="mailto:michael@wandoo.ca">Email</a>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
