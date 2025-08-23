@@ -33,7 +33,8 @@ self.addEventListener("install", (event) => {
     self.skipWaiting();
     event.waitUntil(addResourcesToCache([
         "/",
-        "/index.html"
+        "/index.html",
+        "favicon.png"
     ]));
 });
 
