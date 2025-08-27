@@ -35,7 +35,7 @@ self.addEventListener("install", (event) => {
         "/",
         "/index.html",
         "favicon.png",
-        "/*"
+        "/favicon"
     ]));
 });
 
