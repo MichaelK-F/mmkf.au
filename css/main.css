@@ -1,0 +1,6 @@
+/* Keep inline SVG icons at text height and align with text */
+img[src$=".svg"] {
+  height: 1em;
+  width: auto;
+  vertical-align: text-bottom;
+}
