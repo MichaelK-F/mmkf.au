@@ -5,7 +5,6 @@ const CACHE_NAME = "mmkf-v2";
 const PRECACHE_URLS = [
   "/",
   "/index.html",
-  "/index-old.html",
   "/README.md",
   "/sitemap.txt",
   "/favicon.png",
@@ -21,11 +20,7 @@ const PRECACHE_URLS = [
   "/favicon/web-app-manifest-192x192.png",
   "/favicon/web-app-manifest-512x512.png",
   "/qr/bc/index.html",
-  "/things/hc-sh.html",
-  "/things/rawr.html",
-  "/things/thing.html",
   "/ServiceWorker.js",
-  "/js/ServiceWorker.js",
 ];
 
 self.addEventListener("install", (event) => {
