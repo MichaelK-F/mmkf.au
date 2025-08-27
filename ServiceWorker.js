@@ -1,13 +1,13 @@
 // Cache versioning
-const CACHE_NAME = "mmkf-v4";
+const CACHE_NAME = "mmkf-v5";
 
-// Resources to precache at install (ALL site files)
+// Resources to precache at install (core shell + critical assets)
 const PRECACHE_URLS = [
-  "/",
   "/index.html",
   "/favicon.png",
   "/css/main.css",
   "/css/bootstrap.5.3.7.min.css",
+  "/js/bootstrap.bundle.min.5.3.7.js",
   "/imgs/linkedin.svg",
   "/imgs/github-mark-white.svg",
   "/favicon/apple-touch-icon.png",
