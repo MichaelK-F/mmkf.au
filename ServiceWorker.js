@@ -1,10 +1,13 @@
 // Cache versioning
-const CACHE_NAME = "mmkf-v1";
+const CACHE_NAME = "mmkf-v2";
 
-// Resources to precache at install
+// Resources to precache at install (ALL site files)
 const PRECACHE_URLS = [
   "/",
   "/index.html",
+  "/index-old.html",
+  "/README.md",
+  "/sitemap.txt",
   "/favicon.png",
   "/css/main.css",
   "/css/bootstrap.5.3.7.min.css",
@@ -13,10 +16,16 @@ const PRECACHE_URLS = [
   "/favicon/apple-touch-icon.png",
   "/favicon/favicon-96x96.png",
   "/favicon/favicon.svg",
+  "/favicon/favicon.ico",
   "/favicon/site.webmanifest",
   "/favicon/web-app-manifest-192x192.png",
   "/favicon/web-app-manifest-512x512.png",
   "/qr/bc/index.html",
+  "/things/hc-sh.html",
+  "/things/rawr.html",
+  "/things/thing.html",
+  "/ServiceWorker.js",
+  "/js/ServiceWorker.js",
 ];
 
 self.addEventListener("install", (event) => {
