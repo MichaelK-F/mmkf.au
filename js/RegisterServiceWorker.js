@@ -1,7 +1,7 @@
 const registerServiceWorker = async () => {
     if ("serviceWorker" in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register("./js/ServiceWorker.js")
+            const registration = await navigator.serviceWorker.register("/js/ServiceWorker.js")
             registration.addEventListener("updatefound", () => {
                 console.log("New worker being installed => ", registration.installing)
             })

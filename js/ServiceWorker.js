@@ -35,8 +35,12 @@ self.addEventListener("install", (event) => {
         "/",
         "/index.html",
         "favicon.png",
-        "/favicon",
-        "/*"
+        "/favicon/favicon.ico",
+        "/js/ServiceWorker.js",
+        "/js/RegisterServiceWorker.js",
+        "/css/main.css",
+        "/imgs/linkedin.svg",
+        "/imgs/github-mark-white.svg"
     ]));
 });
 
