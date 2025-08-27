@@ -34,13 +34,21 @@ self.addEventListener("install", (event) => {
     event.waitUntil(addResourcesToCache([
         "/",
         "/index.html",
-        "favicon.png",
+        "/favicon.png",
         "/favicon/favicon.ico",
         "/js/ServiceWorker.js",
         "/js/RegisterServiceWorker.js",
         "/css/main.css",
         "/imgs/linkedin.svg",
-        "/imgs/github-mark-white.svg"
+        "/imgs/github-mark-white.svg",
+        "/css/bootstrap.5.3.7.min.css",
+        "/favicon/apple-touch-icon.png",
+        "/favicon/favicon-96x96.png",
+        "/favicon/favicon.svg",
+        "/favicon/site.webmanifest",
+        "/favicon/web-app-manifest-192x192.png",
+        "/favicon/web-app-manifest-512x512.png",
+        "/qr/bc/index.html"
     ]));
 });
 
