@@ -1,12 +1,10 @@
 // Cache versioning
-const CACHE_NAME = "mmkf-v2";
+const CACHE_NAME = "mmkf-v4";
 
 // Resources to precache at install (ALL site files)
 const PRECACHE_URLS = [
   "/",
   "/index.html",
-  "/README.md",
-  "/sitemap.txt",
   "/favicon.png",
   "/css/main.css",
   "/css/bootstrap.5.3.7.min.css",
