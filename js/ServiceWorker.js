@@ -37,7 +37,6 @@ self.addEventListener("install", (event) => {
         "/favicon.png",
         "/favicon/favicon.ico",
         "/js/ServiceWorker.js",
-        "/js/RegisterServiceWorker.js",
         "/css/main.css",
         "/imgs/linkedin.svg",
         "/imgs/github-mark-white.svg",

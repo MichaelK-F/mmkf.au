@@ -12,7 +12,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="MMKF">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <script src="/js/RegisterServiceWorker.js" defer></script>
+    <script defer>
+      const registerServiceWorker = async () => {
+          if ("serviceWorker" in navigator) {
+              try {
+                  const registration = await navigator.serviceWorker.register("./sw.js")
+                  registration.addEventListener("updatefound", () => {
+                      console.log("New worker being installed => ", registration.installing)
+                  })
+                  if (registration.installing) {
+                      console.log("Service worker installed");
+                  } else if (registration.active) {
+                      console.log("Service worker active!");
+                  }
+              } catch (err) {
+                  console.error("Registration failed")
+              }
+          }
+      }
+      registerServiceWorker()
+    </script>
   </head>
   <body>
     <!-- Navbar -->
