@@ -7,6 +7,10 @@
     <title>Music Quiz Audio Player</title>
     <script src="./main.js"></script>
     <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
       button {
         height: 15mm;
         width: 20mm;
@@ -15,38 +19,107 @@
     </style>
   </head>
   <body>
-    <h1>I hope this works</h1>
+    <h1>General Songs:</h1>
     <ol>
       <li>
-        <audio-player location="./audio/1.mp3" start="0" end="8"></audio-player> <!-- Happy Together - The Turtles 0:00-0:08 -->
+        <audio-player location="./audio/general/1.mp3" start="0" end="8"></audio-player> <!-- Happy Together - The Turtles 0:00-0:08 -->
       </li><br>
       <li>
-        <audio-player location="./audio/2.mp3" start="0" end="19"></audio-player> <!-- Since you've been gone - Rainbow 0:00-0:19 -->
+        <audio-player location="./audio/general/2.mp3" start="0" end="19"></audio-player> <!-- Since you've been gone - Rainbow 0:00-0:19 -->
       </li><br>
       <li>
-        <audio-player location="./audio/3.mp3" start="0" end="12"></audio-player> <!-- 24K Magic - Bruno Mars 0:00-0:12 -->
+        <audio-player location="./audio/general/3.mp3" start="0" end="12"></audio-player> <!-- 24K Magic - Bruno Mars 0:00-0:12 -->
       </li><br>
       <li>
-        <audio-player location="./audio/4.mp3" start="19" end="32"></audio-player> <!-- Solid Rock - Goanna 0:19-0:32 -->
+        <audio-player location="./audio/general/4.mp3" start="19" end="32"></audio-player> <!-- Solid Rock - Goanna 0:19-0:32 -->
       </li><br>
       <li>
-        <audio-player location="./audio/5.mp3" start="0" end="5"></audio-player> <!-- Life is a highway - Rascal Flats 0:00-0:05 -->
+        <audio-player location="./audio/general/5.mp3" start="0" end="5"></audio-player> <!-- Life is a highway - Rascal Flats 0:00-0:05 -->
       </li><br>
       <li>
-        <audio-player location="./audio/6.mp3" start="0" end="13"></audio-player> <!-- Back to friends - sombr 0:00-0:13 -->
+        <audio-player location="./audio/general/6.mp3" start="0" end="13"></audio-player> <!-- Back to friends - sombr 0:00-0:13 -->
       </li><br>
       <li>
-        <audio-player location="./audio/7.mp3" start="4" end="15"></audio-player> <!-- Mr Blue Sky - Electric Light Orchestra 0:04-0:15 -->
+        <audio-player location="./audio/general/7.mp3" start="4" end="15"></audio-player> <!-- Mr Blue Sky - Electric Light Orchestra 0:04-0:15 -->
       </li><br>
       <li>
-        <audio-player location="./audio/8.mp3" start="10" end="24"></audio-player> <!-- One Last Breath - Creed 0:10-0:24 -->
+        <audio-player location="./audio/general/8.mp3" start="10" end="24"></audio-player> <!-- One Last Breath - Creed 0:10-0:24 -->
       </li><br>
       <li>
-        <audio-player location="./audio/9.mp3" start="4" end="20"></audio-player> <!-- Epic - Faith No More 0:04-0:20 -->
+        <audio-player location="./audio/general/9.mp3" start="4" end="20"></audio-player> <!-- Epic - Faith No More 0:04-0:20 -->
       </li><br>
       <li>
-        <audio-player location="./audio/10.mp3" start="129" end="132"></audio-player> <!-- Buddy Holly - Weezer 2:09-2:12 -->
+        <audio-player location="./audio/general/10.mp3" start="129" end="132"></audio-player> <!-- Buddy Holly - Weezer 2:09-2:12 -->
       </li><br>
     </ol>
+
+    <h1>Songs From Games:</h1>
+    <ol>
+      <li>
+        <audio-player location="./audio/games/1.mp3" start="0" end="15"></audio-player> <!-- Mario bros underwater theme - 0:00–0:15 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/2.mp3" start="16" end="35"></audio-player> <!-- Helldivers II theme - 0:16–0:35 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/3.mp3" start="0" end="18"></audio-player> <!-- Crescendo-AOC/BOTW main theme - 0:00–0:18 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/4.mp3" start="8" end="24"></audio-player> <!-- City of Tears – Hollow Knight - 0:08–0:24 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/5.mp3" start="0" end="15"></audio-player> <!-- The Nightmare King – Hollow Knight - 0:00–0:15 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/6.mp3" start="4" end="23"></audio-player> <!-- Lavender Town – Pokemon Red/Blue - 0:04–0:23 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/7.mp3" start="0" end="12"></audio-player> <!-- Tetris Theme - 0:00–0:12 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/8.mp3" start="64" end="86"></audio-player> <!-- A brotherhood of heroes - 1:04–1:26 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/9.mp3" start="5" end="25"></audio-player> <!-- The Halo Theme - 0:05–0:25 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/games/10.mp3" start="0" end="19"></audio-player> <!-- Coconut Mall in 6/8 - 0:00–0:19 -->
+      </li><br>
+    </ol>
+
+    <h1>Songs From Moves:</h1>
+    <ol>
+      <li>
+        <audio-player location="./audio/movies/1.mp3" start="0" end="15"></audio-player> <!-- Ghost busters - 0:00–0:15 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/2.mp3" start="0" end="12"></audio-player> <!-- Seinfeld Intro Theme - 0:00–0:12 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/3.mp3" start="6" end="21"></audio-player> <!-- Binary Sunset/The force theme - 0:06–0:21 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/4.mp3" start="0" end="14"></audio-player> <!-- Indiana Jones - 0:00–0:14 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/5.mp3" start="77" end="92"></audio-player> <!-- Jurassic Park - 1:17–1:32 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/6.mp3" start="0" end="13"></audio-player> <!-- Brooklyn Nine-Nine’s intro theme - 0:00–0:13 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/7.mp3" start="0" end="10"></audio-player> <!-- Horn of Plenty - 0:00–0:10 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/8.mp3" start="63" end="83"></audio-player> <!-- The Prowler - 1:03–1:23 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/9.mp3" start="150" end="172"></audio-player> <!-- No time for caution - 2:30–2:52 -->
+      </li><br>
+      <li>
+        <audio-player location="./audio/movies/10.mp3" start="0" end="10"></audio-player> <!-- The Friends intro theme/I’ll be there for you - 0:00–0:10 -->
+      </li><br>
+    </ol>
+
   </body>
 </html>
