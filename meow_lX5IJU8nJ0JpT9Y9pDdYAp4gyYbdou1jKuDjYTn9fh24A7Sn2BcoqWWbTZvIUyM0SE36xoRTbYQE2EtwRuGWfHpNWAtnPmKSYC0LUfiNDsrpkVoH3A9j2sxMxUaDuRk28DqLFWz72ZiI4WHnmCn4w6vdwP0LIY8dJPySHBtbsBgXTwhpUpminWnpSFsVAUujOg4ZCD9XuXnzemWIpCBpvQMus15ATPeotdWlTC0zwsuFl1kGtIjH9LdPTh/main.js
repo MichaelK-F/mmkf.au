@@ -86,4 +86,4 @@ class AudioClipPlayer extends HTMLElement {
   }
 }
 
-customElements.define("player", AudioClipPlayer);
+customElements.define("audio-player", AudioClipPlayer);
